@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Write Prescription</title>
+</head>
+<body>
+    <div class="container">
+    <form action="/" method="POST">
+    <div class="mb-2">
+        
+        <label for="docname" class="form-text">Doctor</label>
+        
+        <input type="text" name="doctor" class="form-control" id="docname" placeholder="name of doctor">
+    
+    </div>
+      <div class="mb-2">
+        <label for="patient" class="form-label">patient name</label>
+        <input type="text"  name="patient" class="form-control" id="patient" placeholder="name of patient">
+      
+        <label for="age" class="form-label">age</label>
+        <input type="text" name="age" class="form-control" id="age" placeholder="age">
+      </div>
+      <div class="mb-2">
+        <label for="symptoms" class="form-label">symptoms</label>
+        <input type="text" name="symptoms" class="form-control" id="symptoms" placeholder="symptoms">
+      </div>
+      <div class="mb-2">
+        <label for="prescription" class="form-label">Prescription</label>
+        <textarea class="form-control" name="prescription" id="prescription" rows="3"></textarea>
+      </div>
+      <div class="mb-2">
+        <label for="advice" class="form-label">Advice</label>
+        <textarea class="form-control" name="advice" id="advice" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+    <button class="btn btn-success" id="buttontospeak">Tap to speak</button>
+    </div>
+    <script src="scripts/datacheck.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="scripts/prescription.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script> -->
+
+</body>
+
+</html>
